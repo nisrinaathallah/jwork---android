@@ -1,10 +1,8 @@
-/**
- * @author: Nisrina Athallah - 1806148813
- * @version: Modul 9 - Case Study - 27 Mei 2021
- */
-
 package nisrinaathallah.jwork_android;
-
+/**
+ * @author Nisrina Athallah - 1806148813
+ * @version 27-06-2021
+ */
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,9 +20,15 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+ * insiasi class Register Activity
+ */
 public class RegisterActivity extends AppCompatActivity implements Response.ErrorListener {
 
-
+    /**
+     * method untuk onCreate perancangan view
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +42,15 @@ public class RegisterActivity extends AppCompatActivity implements Response.Erro
         EditText editTextPassword = findViewById(R.id.editTextPassword_Register);
         Button buttonRegister = findViewById(R.id.buttonRegister_Register);
 
+        /**
+         * listener untuk button register
+         */
         buttonRegister.setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * method respon setelah tombol register dipilih
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 String name = editTextName.getText().toString();
@@ -66,9 +78,12 @@ public class RegisterActivity extends AppCompatActivity implements Response.Erro
         });
     }
 
+    /**
+     * mwthod untuk menampilkan respon error
+     * @param error
+     */
     @Override
     public void onErrorResponse(VolleyError error) {
 
     }
 }
-

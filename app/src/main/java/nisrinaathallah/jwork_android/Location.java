@@ -1,43 +1,71 @@
+package nisrinaathallah.jwork_android;
 /**
- * @author: Nisrina Athallah - 1806148813
- * @version: Modul 9 - Case Study - 27 Mei 2021
+ * @author Nisrina Athallah - 1806148813
+ * @version 27-06-2021
  */
 
-package nisrinaathallah.jwork_android;
+/**
+ * insiasi class
+ */
+public class Location {
+    private String province; //provinsi dari job//
+    private String description; //deskripsi dari job//
+    private String city; //kota dari job//
 
-public class Location{
-    private String province;
-    private String description;
-    private String city;
-
-    public Location(String province, String description, String city){
+    /**
+     * constructor untuk Location
+     * @param province
+     * @param city
+     * @param description
+     */
+    public Location(String province, String city,String description ){
         this.province = province;
-        this.description = description ;
         this.city = city;
-    }
-
-
-    public String getProvince() {
-        return province;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setProvince(String province) {
-        this.province = province;
-    }
-
-    public void setDescription(String description) {
         this.description = description;
     }
+    /**
+     * akses provinsi dari Location
+     * @return provinsi dari Location
+     */
+    public String getProvince(){
+        return this.province;
+    }
 
-    public void setCity(String city) {
+    /**
+     * akses kota dari Location
+     * @return kota dari Location
+     */
+    public String getCity(){
+        return this.city;
+    }
+
+    /**
+     * akses deskripsi dari Location
+     * @return deskripsi dari Location
+     */
+    public String getDescription(){
+        return this.description;
+    }
+
+    /**
+     * akses provinsi dari Location
+     * @return provinsi dari Location
+     */
+    public void setProvince(String province){
+        this.province = province;
+    }
+
+    /** mutasi kota Location
+     * @param city dari Location
+     */
+    public void setCity(String city){
         this.city = city;
+    }
+
+    /** mutasi deskripsi Location
+     * @param description dari Location
+     */
+    public void setDescription(String description){
+        this.description = description;
     }
 }
