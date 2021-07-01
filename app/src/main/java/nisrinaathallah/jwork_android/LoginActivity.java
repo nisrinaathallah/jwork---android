@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
 
     /**
      * inisiasi class on create untuk membuat layout view
-     * @param savedInstanceState
+     * @param savedInstanceState pada login
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
